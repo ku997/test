@@ -1,0 +1,33 @@
+.modal__content{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    &-close{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    &-bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(128, 128, 128, 0.3);
+        cursor: pointer;
+        z-index: -1;
+    }
+    &-form {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        min-width: 290px;
+        max-width: 400px;
+      }
+}

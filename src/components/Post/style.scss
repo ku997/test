@@ -1,0 +1,36 @@
+@import '../../var.scss';
+
+.post{
+    margin-bottom: 30px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+    &__email{
+        margin-top: 15px;
+    }
+    &__title{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            height: 2px;
+            width: 100%;
+            transform: scaleX(0);
+            overflow: hidden;
+            transition: .3s ease;
+            background-color: #000000;
+        }
+        &:hover{
+            &::before{
+                transform: scaleX(1);
+            }
+        }
+    }
+
+}

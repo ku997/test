@@ -1,0 +1,26 @@
+.user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    &__image{
+        width: 130px;
+        height: 130px;
+        margin-right: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    &__name{
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    &__email{
+        margin-bottom: 10px;
+    }
+}

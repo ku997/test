@@ -1,0 +1,10 @@
+@import '../../var.scss';
+
+.comment{
+    margin-bottom: 30px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+    &__email{
+        margin-bottom: 10px;
+    }
+}
